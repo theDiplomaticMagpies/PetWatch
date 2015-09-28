@@ -1,0 +1,22 @@
+{
+  "name": "PetWatch",
+  "version": "0.0.0",
+  "description": "A website connecting pet-owners and pet-sitters",
+  "main": "server.js",
+  "license": "Proprietary",
+  "private": true,
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bluebird": "1.0.8",
+    "body-parser": "^1.5.2",
+    "bookshelf": "~0.6.4",
+    "express": "~4.0.0",
+    "express-partials": "~0.2.0",
+    "express-session": "^1.7.2",
+    "forever": "^0.10.11",
+    "knex": "~0.5.7",
+    "mysql": "^2.9.0",
+    "nodemon": "^1.2.1",
+    "request": "^2.34.0"
+  }
+}
