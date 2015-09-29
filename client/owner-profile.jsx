@@ -6,14 +6,35 @@ var React = require('react');
 module.exports = React.createClass({
 	getInitialState: function(){
 		return {
-			topics: {firstname: 'Nate', lastname: 'Kim', pet: '',description: 'Cat killer'}
+			owners: {firstname: 'Nate', lastname: 'Kim', pet: '',description: 'Cat killer'},
+      pets: {name: 'FEEFEEDO', species: 'catdog', size: '2'}
 		}
 	},
 	render: function(){
 		return (
 			<div>
-				<span>{this.state.topics.firstname}</span>
+        {this.renderOwnerProfile()}
+        {this.renderPetProfile()}
 			</div>
 		)
-	}
+	},
+  renderOwnerProfile: function(){
+    render: function(){
+      return ( //this.state.(ownerInfo).map(function(owner){})
+        <div>
+          <h6>{this.state.pets.name} + " " + {this.state.pets.size} + " " + {this.state.pets.species}</h6>
+          <h4>{this.state.owners.firstname} + " " + {this.state.owners.lastname} </h4>
+        </div>
+        )
+    }
+
+  },
+  renderPetProfile: function(){
+
+
+  },
+
+  // onChange: function(){
+
+  // }
 });
