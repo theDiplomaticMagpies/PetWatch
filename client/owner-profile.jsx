@@ -4,16 +4,12 @@
 var React = require('react');
 
 module.exports = React.createClass({
-	getInitialState: function(){
-		return {
-			owners: {firstname: 'Nate', lastname: 'Kim', pet: '',description: 'Cat killer'},
-      pets: {name: 'FEEFEEDO', species: 'catdog', size: '2'}
-		}
-	},
 	render: function(){
 		return (
 			<div>
         {this.renderPetProfile()}
+      </div>
+      <div>
         {this.renderOwnerProfile()}
 			</div>
 		)
@@ -22,7 +18,7 @@ module.exports = React.createClass({
     render: function(){
       return ( //this.state.(ownersInfo).map(function(owner){})
         <div>
-          <h4>{this.state.owners.firstname} + " " + {this.state.owners.lastname} </h4>
+          <h4>{this.props.owners.firstname} + " " + {this.props.owners.lastname} </h4>
         </div>
         )
     }
@@ -32,7 +28,7 @@ module.exports = React.createClass({
     render: function() {
       return ( //this.state.(petsInfo).map(function(pet)) {})
         <div>
-          <h6>{this.state.pets.name} + " " + {this.state.pets.size} + " " + {this.state.pets.species}</h6>
+          <h6>{this.props.pets.name} + " " + {this.props.pets.size} + " " + {this.props.pets.species}</h6>
         </div>
 
         )
