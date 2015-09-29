@@ -50,7 +50,7 @@ db.knex.schema.hasTable('Pets').then(function(exists) {
 
 db.knex.schema.hasTable('Sitters').then(function(exists) {
   if (!exists) {
-    db.knex.schema.createTable('Sitter', function (table) {
+    db.knex.schema.createTable('Sitters', function (table) {
       table.increments('id').primary();
       table.string('firstname', 20);
       table.string('lastname', 20);
