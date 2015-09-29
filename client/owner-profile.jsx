@@ -13,16 +13,15 @@ module.exports = React.createClass({
 	render: function(){
 		return (
 			<div>
-        {this.renderOwnerProfile()}
         {this.renderPetProfile()}
+        {this.renderOwnerProfile()}
 			</div>
 		)
 	},
   renderOwnerProfile: function(){
     render: function(){
-      return ( //this.state.(ownerInfo).map(function(owner){})
+      return ( //this.state.(ownersInfo).map(function(owner){})
         <div>
-          <h6>{this.state.pets.name} + " " + {this.state.pets.size} + " " + {this.state.pets.species}</h6>
           <h4>{this.state.owners.firstname} + " " + {this.state.owners.lastname} </h4>
         </div>
         )
@@ -30,7 +29,14 @@ module.exports = React.createClass({
 
   },
   renderPetProfile: function(){
+    render: function() {
+      return ( //this.state.(petsInfo).map(function(pet)) {})
+        <div>
+          <h6>{this.state.pets.name} + " " + {this.state.pets.size} + " " + {this.state.pets.species}</h6>
+        </div>
 
+        )
+    }
 
   },
 
