@@ -9,3 +9,29 @@
  height: 60px;
  background-color: #f5f5f5 ;
 }
+.mainPage{
+	background-image: url('http://gph.is/1uUntn2');
+}
+.btnContainer{
+
+	text-align: center;
+	display: inline-block;
+	padding: 250px;
+}
+.ownerButton{
+	display: inline-block;
+	margin: 50px;
+	height: 100px;
+	width: 100px;
+	/*position: relative;*/
+}
+.sitterButton{
+	display: inline-block;
+	margin: 50px;
+	height: 100px;
+	width: 100px;
+	/*position: relative;*/
+}
+.appContainer{
+	
+}

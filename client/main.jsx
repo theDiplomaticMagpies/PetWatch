@@ -4,26 +4,34 @@ var React = require('react');
 var Button = require('./button');
 var Footer = require('./footer');
 var Header = require('./header');
+var ReactRouter = require('react-router');
+var Link = ReactRouter.Link;
 
 module.exports = React.createClass({
 	render: function(){
 		return (
-			<div>
-				<Header /><br/><br/><br/><br/>
-				{this.content()}<br/><br/><br/>
+			<div className="mainPage">
+				<Header />
+				{this.content()}
 				<Footer />
 			</div>
 
 		)
 	},
+	handleClick: function(){
+		console.log('clicked nothing happen');
+	},
+
 	content: function(){
 		if(this.props.children){
 			return this.props.children
 		}else {
 			return (
-				<div>
-				<Button buttontitle="Owner" className="ownerButton"/>
-				<Button buttontitle="Sitter" className="sitterButton"/>
+				<div className="btnContainer">
+
+				<span><Button whenClicked={this.handleClick}buttontitle="Owner" className="ownerButton" /></span>
+
+				<span><Button buttontitle="Sitter" className="sitterButton" /></span>
 			</div>
 			)
 		}
