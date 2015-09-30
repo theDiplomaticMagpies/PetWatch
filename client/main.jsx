@@ -1,6 +1,7 @@
 //Main page
 //Route buttons Owner and Sitter
 var React = require('react');
+var Button = require('./button');
 
 module.exports = React.createClass({
 	render: function(){
@@ -15,7 +16,8 @@ module.exports = React.createClass({
 			return this.props.children
 		}else {
 			return <div>
-				I dont like you
+				<Button buttontitle="Owner" />
+				<Button buttontitle="Sitter" />
 			</div>
 		}
 	}

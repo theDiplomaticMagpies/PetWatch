@@ -17,11 +17,6 @@ module.exports = React.createClass({
         <div> 
           <h4>{this.props.firstname} {this.props.lastname} </h4>
         </div>
-        )
+      )
   }
-  
-
-  // onChange: function(){
-
-  // }
 });
