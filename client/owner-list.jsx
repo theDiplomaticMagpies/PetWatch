@@ -4,8 +4,9 @@
 var React = require('react');
 var OwnerProfile = require('./owner-profile');
 
+
 module.exports = React.createClass({
-    getInitialState: function(){
+  getInitialState: function(){
       return {
         owners: [{firstname: 'Nate', lastname: 'Kim', pet: '',description: 'Cat killer'},{firstname: 'Nate', lastname: 'Kim', pet: '',description: 'Cat killer'},{firstname: 'Nate', lastname: 'Kim', pet: '',description: 'Cat killer'}],
         pets: [{name: 'FEEFEEDO', species: 'catdog', size: '2'},{name: 'FEEFEEDO', species: 'catdog', size: '2'},{name: 'FEEFEEDO', species: 'catdog', size: '2'}]
@@ -22,5 +23,4 @@ module.exports = React.createClass({
         lastname={owner.lastname} />
     })
   }
-    // return this.state.
 })

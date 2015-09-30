@@ -14,7 +14,8 @@ module.exports = React.createClass({
 		if(this.props.children){
 			return this.props.children
 		}else {
-			return <div>I dont like you
+			return <div>
+				I dont like you
 			</div>
 		}
 	}
