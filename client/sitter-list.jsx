@@ -5,11 +5,20 @@ var React = require('react');
 var SitterProfile = require('./sitter-profile');
 
 module.exports = React.createClass({
-	render: function(){
-		return (
-			<div>
-				<SitterProfile />
-			</div>
-		)
-	}
-})
+	getInitialState: function(){
+      return {
+        sitters: [{firstname: 'Nate', lastname: 'Kim', pet: '',description: 'Cat killer'},{firstname: 'Nate', lastname: 'Kim', pet: '',description: 'Cat killer'},{firstname: 'Nate', lastname: 'Kim', pet: '',description: 'Cat killer'}]
+      }
+    },
+  	render: function(){
+	    return <div>
+	      		{this.renderSitters()}
+	    	</div>
+		 },
+	renderSitters: function() {
+	    return this.state.sitters.map(function(sitter){
+	       return <SitterProfile firstname={sitter.firstname}
+	        lastname={sitter.lastname} />
+	    })
+  }
+});
