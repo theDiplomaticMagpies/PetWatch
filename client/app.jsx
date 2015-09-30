@@ -1,6 +1,6 @@
 var React = require('react');
-// var Routes = require('./routes');
-var SitterList = require('./sitter-list');
+var Routes = require('./routes');
+
 // var Api = require('./utils/api');
 
-React.render(SitterList, document.querySelector('.container'));
+React.render(Routes, document.querySelector('.container'));
