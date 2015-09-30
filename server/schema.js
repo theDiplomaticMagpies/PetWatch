@@ -35,6 +35,7 @@ db.knex.schema.hasTable('Pets').then(function(exists) {
       table.increments('id').primary();
       table.integer('ownersID').unsigned().references('Owners.id');
       table.string('species', 50);
+      table.string('name', 50);
       table.integer('age').unsigned();
       table.string('size', 20);
       table.string('description', 255);
