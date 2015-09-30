@@ -5,16 +5,19 @@
 var React = require('react');
 
 module.exports = React.createClass({
-			getInitialState: function(){
-				return {
-					topics: {firstname: 'Nate', lastname: 'Kim', description: 'Cat killer'}
-				}
-			},
-			render: function(){
-				return (
-					<div>
-						<span>{this.state.topics.firstname}</span>
-					</div>
-				)
-	}
+	render: function(){
+		return (
+	      <div>
+	        {this.renderSitterProfile()}
+	      </div>
+		)
+	},
+  renderSitterProfile: function(){
+      return (
+        <div> 
+          <h4>{this.props.firstname} {this.props.lastname} </h4>
+        </div>
+        )
+  }
+  
 });
