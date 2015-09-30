@@ -13,7 +13,7 @@ module.exports = React.createClass({
       }
     },
   render: function(){
-    return <div>
+    return <div className='ownerBar'>
       {this.renderOwners()}
     </div>
   },

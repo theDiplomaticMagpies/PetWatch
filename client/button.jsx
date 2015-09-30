@@ -4,8 +4,8 @@ module.exports = React.createClass({
 	render: function(){
 		return (
 			<div>
-				<button>{this.props.buttontitle}</button>
-			</div>	
+				<button className={this.props.className}>{this.props.buttontitle}</button>
+			</div>
 		)
 	}
 });

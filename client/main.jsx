@@ -9,11 +9,11 @@ module.exports = React.createClass({
 	render: function(){
 		return (
 			<div>
-				<Header />
-				<Footer />	
-				{this.content()}
+				<Header /><br/><br/><br/><br/>
+				{this.content()}<br/><br/><br/>
+				<Footer />
 			</div>
-			
+
 		)
 	},
 	content: function(){
@@ -22,8 +22,8 @@ module.exports = React.createClass({
 		}else {
 			return (
 				<div>
-				<Button buttontitle="Owner" />
-				<Button buttontitle="Sitter" />
+				<Button buttontitle="Owner" className="ownerButton"/>
+				<Button buttontitle="Sitter" className="sitterButton"/>
 			</div>
 			)
 		}
