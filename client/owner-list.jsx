@@ -12,21 +12,15 @@ module.exports = React.createClass({
       }
     },
   render: function(){
-    return this.state.owners.map(function(owner){
-      this.state.pets.map(function(pet){
-        <div>
-          <OwnerProfile
-          firstname={owner.firstname}
-          lastname={owner.lastname}
-          name={pet.name}
-          size={pet.size}
-          species={pet.species} />
-        </div>
-
-      })
-    })
+    return <div>
+      {this.renderOwners()}
+    </div>
   },
   renderOwners: function() {
-    // return this.state.
+    return this.state.owners.map(function(owner){
+       return <OwnerProfile firstname={owner.firstname}
+        lastname={owner.lastname} />
+    })
   }
+    // return this.state.
 })
