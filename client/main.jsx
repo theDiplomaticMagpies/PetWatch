@@ -6,11 +6,17 @@ module.exports = React.createClass({
 	render: function(){
 		return (
 			<div>
-				//Need our nav bar here
-				<div>Owner</div>
-				<div>Sitter</div>
+				{this.content()}
 			</div>
 		)
+	},
+	content: function(){
+		if(this.props.children){
+			return this.props.children
+		}else {
+			return <div>I dont like you
+			</div>
+		}
 	}
 
 });
