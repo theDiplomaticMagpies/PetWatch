@@ -25,9 +25,8 @@ module.exports = React.createClass({
 
       })
     })
-    )
-  }
+  },
   renderOwners: function() {
-    return this.state.
+    // return this.state.
   }
 })
