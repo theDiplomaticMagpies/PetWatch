@@ -3,4 +3,4 @@ var Routes = require('./routes');
 
 // var Api = require('./utils/api');
 
-React.render(Routes, document.querySelector('.container'));
+React.render(Routes, document.querySelector('.appContainer'));

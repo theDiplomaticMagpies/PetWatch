@@ -4,7 +4,7 @@ module.exports = React.createClass({
 	render: function(){
 		return (
 			<div>
-				<button className={this.props.className}>{this.props.buttontitle}</button>
+				<button className={this.props.className + " btn btn-primary"}>{this.props.buttontitle}</button>
 			</div>
 		)
 	}
