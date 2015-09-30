@@ -10,8 +10,8 @@ var Main = require('./main');
 module.exports = (
 	<Router>
 	    <Route path="/" component={Main}>
-	    	<Route path="owner/" component={OwnerList} />
-	    	<Route path="sitter/" component={SitterList} />
+	    	<Route path="owner" component={OwnerList} />
+	    	<Route path="sitter" component={SitterList} />
 	    </Route>
     </Router>
 )
