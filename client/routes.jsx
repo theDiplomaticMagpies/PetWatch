@@ -7,7 +7,7 @@ var Route = ReactRouter.Route;
 var OwnerList = require('./owner-list');
 
 module.exports = (
-  <Router history={new HashHistory}>
+  <Router>
     <Route path="/" component={OwnerList}>
 
     </Route>
