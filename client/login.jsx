@@ -10,7 +10,9 @@ module.exports = React.createClass({
       <input type="password" />
       <button>signin</button>
     </form>
-    <a href="#/signup">Dont have an account? <strong>Signup</strong> ...</a></div>
+    <a href="#/signupowner">Dont have an account? Have a pet? Want it watched? <strong>Signup</strong> ...</a>
+    <a href="#/signupsitter">Dont have an account? Want to make some money? Love animals? <strong>Signup</strong> ...</a>
+    </div>
     )
   }
 });

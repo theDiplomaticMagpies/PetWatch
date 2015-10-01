@@ -7,12 +7,14 @@ var OwnerList = require('./owner-list');
 var SitterList = require('./sitter-list');
 var Main = require('./main');
 var Login = require('./login');
-var SignUp = require('./signup');
+var SignUpOwner = require('./signup-owner');
+var SignUpSitter = require('./signup-sitter');
 
 module.exports = (
 		<Router>
 			<Route path="login" component={Login} />
-			<Route path="signup" component={SignUp} />
+			<Route path="signupowner" component={SignUpOwner} />
+			<Route path="signupsitter" component={SignUpSitter} />
 	    <Route path="/" component={Main}>
 	    	<Route path="owner" component={OwnerList} />
 	    	<Route path="sitter" component={SitterList} />
