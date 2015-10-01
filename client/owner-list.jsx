@@ -18,10 +18,10 @@ module.exports = React.createClass({
   componentWillMount: function(){
     this.bindAsArray(new Firebase(urlRoot + 'owners'), 'owners');
     // this.setState({owners: this.state.owners});
-    console.log(this.state.owners);
+
   },
   render: function(){
-    console.log(this.state.owners);
+
     return <div className='ownerBar'>
       {this.renderOwners()}
     </div>
@@ -29,7 +29,7 @@ module.exports = React.createClass({
   renderOwners: function() {
     return this.state.owners.map(function(owner){
        return <OwnerProfile picUrl={owner.pets.picURL} firstname={owner.firstname}
-        lastname={owner.lastname} />
+        lastname={owner.lastname} description={owner.pets.description}/>
     })
   }
 })

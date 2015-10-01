@@ -1,26 +1,47 @@
-.ownerBar{
-
-}
-
-.mainPage{
+/*.mainPage{
   padding-bottom: 30px;
   text-align: center;
   overflow: auto;
-}
-.btnContainer{
+}*/
+.btnContainer {
 
 	text-align: center;
 	display: inline-block;
-	padding: 250px;
+  padding-left: 500px;
 }
-.ownerButton{
+
+.well {
+  width: 100%;
+}
+
+.sitterPic, .petPic {
+  margin-bottom: 20px;
+
+}
+
+.sitterPic, .petPic {
+  width: 200px;
+  height: 200px;
+}
+
+
+.ownerBar, .sitterThumbnail {
+  margin-left: 5px;
+}
+
+ .ownerCaption, .sitterCaption{
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
+.ownerButton {
 	display: inline-block;
   margin: 50px;
 	height: 250px;
 	width: 150px;
 
 }
-.sitterButton{
+.sitterButton {
 	display: inline-block;
 	margin: 50px;
 	height: 250px;
@@ -28,15 +49,8 @@
 
 }
 .appContainer{
-  text-align: center;
-  margin: 75px;
-}
 
-.sitterThumbnail {
-  border: 1px solid black;
-  padding-top: 10px;
-  content-bottom: 100px;
-  margin-bottom: 20px;
+  margin: 75px;
 }
 
 
@@ -45,8 +59,4 @@
   text-decoration: none;
 }
 
-img {
 
-  width: 200px;
-  height: 200px;
-}

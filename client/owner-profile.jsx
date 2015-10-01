@@ -7,20 +7,22 @@ var React = require('react');
 module.exports = React.createClass({
 	render: function(){
 		return (
-      <div className='col-sm-4'>
+      <div className='well col-md-6'>
         {this.renderOwnerProfile()}
       </div>
-
 		)
 	},
   renderOwnerProfile: function(){
       return (
         <div className='ownerThumbnail'>
-          <img src={this.props.picUrl} />
+          <img className='petPic' src={this.props.picUrl} />
           <div className='ownerCaption'>
             <h4>{this.props.firstname} {this.props.lastname} </h4>
+            <h6>{this.props.description}</h6>
           </div>
+
         </div>
+
       )
   }
 });

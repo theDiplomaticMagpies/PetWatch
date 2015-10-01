@@ -12,10 +12,9 @@ var SignUpSitter = require('./signup-sitter');
 
 module.exports = (
 		<Router>
-			<Route path="login" component={Login} />
-			<Route path="signupowner" component={SignUpOwner} />
-			<Route path="signupsitter" component={SignUpSitter} />
-	    <Route path="/" component={Main}>
+      <Route path="/" component={Main}>
+  			<Route path="signupowner" component={SignUpOwner} />
+  			<Route path="signupsitter" component={SignUpSitter} />
 	    	<Route path="owner" component={OwnerList} />
 	    	<Route path="sitter" component={SitterList} />
 	    </Route>
