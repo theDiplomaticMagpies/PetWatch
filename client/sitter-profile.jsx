@@ -18,6 +18,7 @@ module.exports = React.createClass({
           <img src='http://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg'/>
           <div className='sitterCaption'>
             <h4>{this.props.firstname} {this.props.lastname} </h4>
+            <h6>{this.props.description}</h6>
           </div>
         </div>
         )

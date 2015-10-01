@@ -14,12 +14,11 @@ module.exports = React.createClass({
 	},
   renderOwnerProfile: function(){
       return (
-        turn (
         <div className='ownerThumbnail'>
           <img src='http://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg'/>
           <div className='ownerCaption'>
-          <h4>{this.props.firstname} {this.props.lastname} </h4>
-          </div
+            <h4>{this.props.firstname} {this.props.lastname} </h4>
+          </div>
         </div>
       )
   }
