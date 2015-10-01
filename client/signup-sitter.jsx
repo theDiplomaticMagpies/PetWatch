@@ -11,10 +11,10 @@ module.exports = React.createClass({
       <input type="text" name="email"/>
       <input type='text' name="address"/>
       <input type="text" name="phone"/>
-      <input type="text" name="petName"/>
-      <input type='text' name="petSpecies"/>
-      <input type="text" name="petDescription"/>
-      <input type="text" name="petUrl"/>
+      <input type="text" name="firstname"/>
+      <input type='text' name="lastname"/>
+      <input type="text" name="description"/>
+      <input type="text" name="picUrl"/>
       <button>signup</button>
     </form>
     <a href="#/login">Already have an account? <strong>Signin</strong> ...</a>
