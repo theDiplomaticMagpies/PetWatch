@@ -17,20 +17,52 @@ module.exports = React.createClass({
   },
   render: function(){
     return (
-  <div id='signup'>
-    <h1>signup</h1>
-    <form className="signupForm input-group">
-      First Name: <input type="text" name="firstname" onChange={this.handleFirstNameChange} value={this.state.firstname}/>
-      Last Name: <input type='text' name="lastname" onChange={this.handleLastNameChange} value={this.state.lastname} />
-      Email: <input type="text" name="email" onChange={this.handleEmailChange} value={this.state.email} />
-      Address: <input type='text' name="address" onChange={this.handleAddressChange} value={this.state.address} />
-      Phone: <input type="text" name="phone" onChange={this.handlePhoneChange} value={this.state.phone} />
-      Description: <input type="text" name="description" onChange={this.handleDescriptionChange} value={this.state.description} />
-      Profile Url: <input type="text" name="pic" onChange={this.handleUrlChange} value={this.state.picURL} />
-      <button onClick={this.handleSubmit}>signup</button>
-    </form>
-    <a href="#/login">Already have an account? <strong>Signin</strong> ...</a>
-  </div>
+      <div className="container">
+              <div className="row centered-form">
+              <div className="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+              	<div className="panel panel-default">
+              		<div className="panel-heading">
+      			    		<h3 className="panel-title">Signup as a Sitter!</h3>
+      			 			</div>
+      			 			<div className="panel-body">
+      			    		<form role="form">
+      			    			<div className="row">
+
+      			    					<div className="form-group">
+      			                <input className="input-bar" type="text" name="firstname" placeholder="First Name" onChange={this.handleFirstNameChange} value={this.state.firstname}/>
+      			    					</div>
+
+      			    					<div className="form-group">
+      			    						<input className="input-bar" type='text' name="lastname" placeholder="Last Name" onChange={this.handleLastNameChange} value={this.state.lastname} />
+      			    					</div>
+      			    			</div>
+
+
+        			    			<div className="row">
+        			    			<div className="form-group">
+        			    				<input className="input-bar" type="text" name="email" placeholder="Email" onChange={this.handleEmailChange} value={this.state.email} />
+        			    			</div>
+
+      			    					<div className="form-group">
+      			    						<input className="input-bar" type="text" name="phone" placeholder="Phone Number" onChange={this.handlePhoneChange} value={this.state.phone} />
+      			    					</div>
+                          <div className="form-group">
+                          <input className="input-bar" type="text" name="description" placeholder="A description of yourself" onChange={this.handleDescriptionChange} value={this.state.description} />
+                          </div>
+
+                          <div className="form-group">
+                            <input className="input-bar" type="text" name="picURL" placeholder="A Url to your picture" onChange={this.handleUrlChange} value={this.state.picURL} />
+                          </div>
+      			    			</div>
+
+      			    			<button onClick={this.handleSubmit} className="signup-button btn btn-primary">Signup!</button>
+
+      			    		</form>
+      			    	</div>
+      	    		</div>
+          		</div>
+          	</div>
+          </div>
 
     )
   },
