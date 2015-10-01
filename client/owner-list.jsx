@@ -29,7 +29,7 @@ module.exports = React.createClass({
   renderOwners: function() {
     return this.state.owners.map(function(owner){
        return <OwnerProfile picUrl={owner.pets.picURL} firstname={owner.firstname}
-        lastname={owner.lastname} />
+        lastname={owner.lastname} description={owner.pets.description}/>
     })
   }
 })

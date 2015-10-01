@@ -11,9 +11,12 @@ module.exports = React.createClass({
 						<a className="navbar-brand" href="#">WATCHING YOUR PETS</a>
 					</div>
 					<div id="navbar" className="collapse navbar-collapse">
-						<ul className="nav navbar-nav">
+						<ul className="nav navbar-nav navbar-right">
 							<li ><Link  to="owner">Owner</Link></li>
 							<li ><Link  to="sitter">Sitter</Link></li>
+              <li><Link to="signupowner">Signup for Owner</Link></li>
+              <li><Link to="signupsitter">Signup for Sitter</Link></li>
+
 
 						</ul>
 					</div>

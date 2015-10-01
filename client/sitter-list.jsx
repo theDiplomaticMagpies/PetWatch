@@ -26,7 +26,8 @@ module.exports = React.createClass({
 	renderSitters: function() {
 	    return this.state.sitters.map(function(sitter){
 	       return <SitterProfile picURL={sitter.picURL} firstname={sitter.firstname}
-	        lastname={sitter.lastname} description={sitter.description}/>
+	        lastname={sitter.lastname} description={sitter.description}
+          phone={sitter.phone} email={sitter.email} address={sitter.address}/>
 	    });
   	}
 });
