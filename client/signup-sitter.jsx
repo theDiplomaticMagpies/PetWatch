@@ -1,5 +1,7 @@
 var React = require('react');
 var Firebase = require('firebase');
+var ReactRouter = require('react-router');
+var Link = ReactRouter.Link;
 
 module.exports = React.createClass({
   getInitialState: function(){
@@ -55,7 +57,7 @@ module.exports = React.createClass({
                           </div>
       			    			</div>
 
-      			    			<button onClick={this.handleSubmit} className="signup-button btn btn-primary">Signup!</button>
+      			    	<button onClick={this.handleSubmit} disabled={!this.state.firstname || !this.state.lastname || !this.state.email || !this.state.address || !this.state.phone || !this.state.description || !this.state.picURL} className="signup-button btn btn-primary"><Link to="owner" className="links">Signup!</Link></button>
 
       			    		</form>
       			    	</div>
