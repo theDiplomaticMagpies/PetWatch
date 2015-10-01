@@ -7,17 +7,21 @@ var React = require('react');
 module.exports = React.createClass({
 	render: function(){
 		return (
-	      <div>
-	        {this.renderSitterProfile()}
-	      </div>
+     <div className='col-sm-4'>
+       {this.renderSitterProfile()}
+     </div>
 		)
 	},
   renderSitterProfile: function(){
       return (
-        <div> 
-          <h4>{this.props.firstname} {this.props.lastname} </h4>
+        <div className='sitterThumbnail'>
+          <img src='http://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg'/>
+          <div className='sitterCaption'>
+            <h4>{this.props.firstname} {this.props.lastname} </h4>
+            <h6>{this.props.description}</h6>
+          </div>
         </div>
         )
   }
-  
+
 });

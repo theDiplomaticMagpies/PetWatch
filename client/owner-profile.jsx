@@ -6,16 +6,19 @@ var React = require('react');
 module.exports = React.createClass({
 	render: function(){
 		return (
-      <div>
+      <div className='col-sm-4'>
         {this.renderOwnerProfile()}
       </div>
-      
+
 		)
 	},
   renderOwnerProfile: function(){
       return (
-        <div> 
-          <h4>{this.props.firstname} {this.props.lastname} </h4>
+        <div className='ownerThumbnail'>
+          <img src='http://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg'/>
+          <div className='ownerCaption'>
+            <h4>{this.props.firstname} {this.props.lastname} </h4>
+          </div>
         </div>
       )
   }

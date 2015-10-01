@@ -1,4 +1,6 @@
 var React = require('react');
+var ReactRouter = require('react-router');
+var Link = ReactRouter.Link;
 
 module.exports = React.createClass({
 	render: function(){
@@ -6,14 +8,13 @@ module.exports = React.createClass({
 			<nav className="navbar navbar-default navbar-fixed-top">
 				<div className="container">
 					<div className="navbar-header">
-						<a className="navbar-brand" href="#">Project name</a>
+						<a className="navbar-brand" href="#">WATCHING YOUR PETS</a>
 					</div>
 					<div id="navbar" className="collapse navbar-collapse">
 						<ul className="nav navbar-nav">
-							<li className="active"><a href="#">Home</a></li>
-							<li className="active"><a href="#">About</a></li>
-							<li className="active"><a href="#">Contact</a></li>
-							<li className="active"><a href="#">OK</a></li>
+							<li ><Link  to="owner">Owner</Link></li>
+							<li ><Link  to="sitter">Sitter</Link></li>
+
 						</ul>
 					</div>
 				</div>
