@@ -26,6 +26,7 @@ module.exports = React.createClass({
       Address: <input type='text' name="address" onChange={this.handleAddressChange} value={this.state.address} />
       Phone: <input type="text" name="phone" onChange={this.handlePhoneChange} value={this.state.phone} />
       Description: <input type="text" name="description" onChange={this.handleDescriptionChange} value={this.state.description} />
+      Profile Url: <input type="text" name="pic" onChange={this.handleUrlChange} value={this.state.picURL} />
       <button onClick={this.handleSubmit}>signup</button>
     </form>
     <a href="#/login">Already have an account? <strong>Signin</strong> ...</a>
@@ -44,14 +45,13 @@ module.exports = React.createClass({
       address: this.state.address,
       phone: this.state.phone,
       description: this.state.description,
-      picURL: 'http://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg'
+      picURL: this.state.picURL
     })
 
   },
   handleFirstNameChange: function(e){
     this.setState({
       firstname: e.target.value
-
     })
   },
   handleLastNameChange: function(e){
@@ -81,4 +81,9 @@ module.exports = React.createClass({
        description: e.target.value
      })
   },
+  handleUrlChange: function(e){
+    this.setState({
+      picURL: e.target.value
+    })
+  }
 })
