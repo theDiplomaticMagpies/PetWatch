@@ -19,6 +19,9 @@ module.exports = React.createClass({
           <div className='ownerCaption'>
             <h4>{this.props.firstname} {this.props.lastname} </h4>
             <h6>{this.props.description}</h6>
+            <br/>
+            <h6>{this.props.phone} {this.props.email}</h6>
+
           </div>
 
         </div>
