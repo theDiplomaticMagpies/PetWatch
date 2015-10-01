@@ -22,14 +22,15 @@ module.exports = React.createClass({
   },
   render: function(){
 
-    return <div className='ownerBar'>
-      {this.renderOwners()}
-    </div>
+    return <div>
+            {this.renderOwners()}
+          </div>
   },
   renderOwners: function() {
     return this.state.owners.map(function(owner){
        return <OwnerProfile picUrl={owner.pets.picURL} firstname={owner.firstname}
-        lastname={owner.lastname} description={owner.pets.description}/>
+        lastname={owner.lastname} description={owner.pets.description} phone={owner.phone}
+        email={owner.email}/>
     })
   }
 })

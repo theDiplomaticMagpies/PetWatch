@@ -17,33 +17,30 @@ module.exports = React.createClass({
 	},
 
 	content: function(){
-		if(this.props.children){
+		if (this.props.children){
 			return this.props.children
-		}else {
+		} else {
 			return (
-
-					<div id="carousel-example-generic" className="carousel slide" data-ride="carousel">
-            <ol className="carousel-indicators">
-              <li data-target="#carousel-example-generic" data-slide-to="0" className="active"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            </ol>
+        <div>
+          <div className="jumbotron container">
+            <div className="greet">
+              <h2>Come meet PEOPLE</h2>
+              <p>Welcome to the most interactive SITTER FINDING app for your pets!</p>
+              <p>We have the most diverse group of sitters to hire
+              for the most interesting owners! With our services, find the generic to the exotic
+              pets to watch!</p>
+              <p>Come and experience the amazing group of pets that you&#39;ll ever meet!</p>
 
 
             <div className="carousel-inner" role="listbox">
               <div className="item active">
-                <img src="http://www.forkingandcountry.com/sites/g/files/g2000004371/f/sample_01.jpg" alt="..." />
-                <div className="carousel-caption">
-                  Under carousel caption
-                </div>
+                <img src="http://www.extremetech.com/wp-content/uploads/2013/09/4Vln8-640x428.jpg" alt="Slide 1" />
+
               </div>
               <div className="item">
-                <img src="http://www.forkingandcountry.com/sites/g/files/g2000004371/f/sample_01.jpg" alt="..." />
-                <div className="carousel-caption">
-                  this is a carousel caption
-                </div>
+                <img src="http://justsomething.co/wp-content/uploads/2014/04/most-adorable-animals-5.jpg" alt="Slide 2" />
+
               </div>
-              i don tknow what i am
             </div>
 
 
@@ -56,6 +53,7 @@ module.exports = React.createClass({
               <span className="sr-only">Next</span>
             </a>
           </div>
+        </div>
 
 			)
 		}
