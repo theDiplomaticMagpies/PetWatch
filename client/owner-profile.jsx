@@ -3,6 +3,7 @@
 //more pictures, possible rating?
 var React = require('react');
 
+
 module.exports = React.createClass({
 	render: function(){
 		return (
@@ -15,7 +16,7 @@ module.exports = React.createClass({
   renderOwnerProfile: function(){
       return (
         <div className='ownerThumbnail'>
-          <img src='http://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg'/>
+          <img src={this.props.picUrl} />
           <div className='ownerCaption'>
             <h4>{this.props.firstname} {this.props.lastname} </h4>
           </div>
