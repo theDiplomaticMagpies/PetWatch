@@ -31,6 +31,11 @@ module.exports = React.createClass({
               pets to watch!</p>
               <p>Come and experience the amazing group of pets that you&#39;ll ever meet!</p>
 
+            </div>
+          </div>
+
+          <div id="carousel-example-generic" className="carousel slide container" data-ride="carousel">
+
 
             <div className="carousel-inner" role="listbox">
               <div className="item active">
@@ -54,7 +59,6 @@ module.exports = React.createClass({
             </a>
           </div>
         </div>
-
 			)
 		}
 	}
