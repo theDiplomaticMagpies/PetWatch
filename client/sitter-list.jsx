@@ -3,26 +3,29 @@
 //profile view link
 var React = require('react');
 var SitterProfile = require('./sitter-profile');
+var ReactFire = require('reactfire');
+var Firebase = require('firebase');
+var urlRoot = 'https://petwatch.firebaseio.com/';
 
 module.exports = React.createClass({
+  mixins:[ReactFire],
 	getInitialState: function(){
       return {
-        sitters: [{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater lsjdflsjd ljsd ljsldj lsdjlsd jlsd jlsdjlk;sd jls'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat killer'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'},
-        {firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat killer'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'},
-        {firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat killer'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'},
-        {firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat killer'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'}
-
-        ]
+        sitters: []
       }
-    },
-  	render: function(){
-	    return <div>
-	      		   {this.renderSitters()}
-      	    	</div>
+   },
+  componentWillMount: function(){
+    this.bindAsArray(new Firebase(urlRoot + 'sitters'), 'sitters');
+
+  },
+  render: function(){
+    return <div>
+      		   {this.renderSitters()}
+    	    	</div>
 	},
 	renderSitters: function() {
 	    return this.state.sitters.map(function(sitter){
-	       return <SitterProfile firstname={sitter.firstname}
+	       return <SitterProfile picURL={sitter.picURL} firstname={sitter.firstname}
 	        lastname={sitter.lastname} description={sitter.description}/>
 	    });
   	}

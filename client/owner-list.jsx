@@ -18,10 +18,10 @@ module.exports = React.createClass({
   componentWillMount: function(){
     this.bindAsArray(new Firebase(urlRoot + 'owners'), 'owners');
     // this.setState({owners: this.state.owners});
-    console.log(this.state.owners);
+
   },
   render: function(){
-    console.log(this.state.owners);
+
     return <div className='ownerBar'>
       {this.renderOwners()}
     </div>

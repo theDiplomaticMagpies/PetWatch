@@ -15,7 +15,7 @@ module.exports = React.createClass({
   renderSitterProfile: function(){
       return (
         <div className='sitterThumbnail'>
-          <img src='http://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg'/>
+          <img src={this.props.picURL}/>
           <div className='sitterCaption'>
             <h4>{this.props.firstname} {this.props.lastname} </h4>
             <h6 maxlength="160">{this.props.description}</h6>
