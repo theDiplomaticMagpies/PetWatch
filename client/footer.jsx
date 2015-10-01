@@ -4,7 +4,7 @@ module.exports = React.createClass({
 	render: function() {
 		return (
 			<footer className="footer">
-				<div className="container">
+				<div className="footerContainer">
 					<p className="text-muted">This is your footer</p>
 				</div>
 			</footer>

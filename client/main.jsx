@@ -11,12 +11,11 @@ module.exports = React.createClass({
 			<div className="mainPage">
 				<Header />
 				{this.content()}
-				<Footer />
 			</div>
 
 		)
 	},
-	
+
 	content: function(){
 		if(this.props.children){
 			return this.props.children

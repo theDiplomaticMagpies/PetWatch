@@ -5,16 +5,16 @@ var Link = ReactRouter.Link;
 module.exports = React.createClass({
 	render: function(){
 		return (
-			<div>
+      <div>
 				{this.renderOwner()}
-			</div>
+        </div>
 		)
 	},
 	renderOwner: function(){
 		return(
 	<div>
-		<button className="btn btn-primary"><Link to="owner">Owner</Link></button>
-		<button className="btn btn-primary"><Link to="sitter">Sitter</Link></button>
+		<Link className="links" to="owner"><button className="ownerButton btn btn-primary">Owner</button></Link>
+		<Link className="links" to="sitter"><button className="sitterButton btn btn-primary">Sitter</button></Link>
 	</div>
 		)
 	}
