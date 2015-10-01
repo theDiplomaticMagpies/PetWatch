@@ -1,6 +1,5 @@
 .ownerBar{
 
-  margin-top: 50px;
 }
 
 .footer {
@@ -27,7 +26,7 @@
 }
 .ownerButton{
 	display: inline-block;
-	margin: 50px;
+  margin: 50px;
 	height: 250px;
 	width: 150px;
 
@@ -40,11 +39,19 @@
 
 }
 .appContainer{
+  text-align: center;
+  margin: 50px;
 
-  width: 100%;
 }
+
 
 .links {
   color: white;
   text-decoration: none;
+}
+
+img {
+
+  width: 200px;
+  height: 200px;
 }

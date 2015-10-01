@@ -7,13 +7,18 @@ var SitterProfile = require('./sitter-profile');
 module.exports = React.createClass({
 	getInitialState: function(){
       return {
-        sitters: [{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat killer'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'}]
+        sitters: [{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat killer'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'},
+        {firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat killer'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'},
+        {firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat killer'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'},
+        {firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat killer'},{firstname: 'Ted', lastname: 'Leeroy', pet: '',description: 'Cat eater'}
+
+        ]
       }
     },
   	render: function(){
 	    return <div>
-	      		{this.renderSitters()}
-	    	</div>
+	      		   {this.renderSitters()}
+      	    	</div>
 	},
 	renderSitters: function() {
 	    return this.state.sitters.map(function(sitter){

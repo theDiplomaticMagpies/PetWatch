@@ -21,9 +21,9 @@ module.exports = React.createClass({
 			return this.props.children
 		}else {
 			return (
-				<div className="btnContainer">
+
 					<Button />
-				</div>
+
 			)
 		}
 	}
