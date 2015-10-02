@@ -20,14 +20,14 @@ module.exports = React.createClass({
     return (
       <div className="container">
               <div className="row centered-form">
-              <div className="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
-              	<div className="panel panel-default">
+              <div><img className="imageHolderOwner" src="http://images.medicaldaily.com/sites/medicaldaily.com/files/2013/08/04/0/62/6259.jpg" /></div>
+              	<div className="panel panel-default owner-panel">
               		<div className="panel-heading">
       			    		<h3 className="panel-title">Signup as an Owner!</h3>
       			 			</div>
       			 			<div className="panel-body">
       			    		<form role="form">
-      			    			<div className="row">
+                    <div className="row">
 
       			    					<div className="form-group">
       			                <input className="input-bar" type="text" name="firstname" placeholder="First Name" onChange={this.handleFirstNameChange} value={this.state.firstname}/>
@@ -36,10 +36,9 @@ module.exports = React.createClass({
       			    					<div className="form-group">
       			    						<input className="input-bar" type='text' name="lastname" placeholder="Last Name" onChange={this.handleLastNameChange} value={this.state.lastname} />
       			    					</div>
-      			    			</div>
+                      </div>
 
-
-      			    			<div className="row">
+                      <div className="row">
       			    			<div className="form-group">
       			    				<input className="input-bar" type="text" name="email" placeholder="Email" onChange={this.handleEmailChange} value={this.state.email} />
       			    			</div>
@@ -58,7 +57,7 @@ module.exports = React.createClass({
                           <div className="form-group">
                             <input className="input-bar" type="text" name="picURL" placeholder="A Url to your pet's picture" onChange={this.handleUrlChange} value={this.state.picURL} />
                           </div>
-      			    			</div>
+                          </div>
 
       			    			<button onClick={this.handleSubmit} disabled={!this.state.firstname || !this.state.lastname || !this.state.email || !this.state.phone || !this.state.petname || !this.state.description || !this.state.species || !this.state.picURL} className="signup-button btn btn-primary"><Link to="sitter" className="links">Signup!</Link></button>
 
@@ -66,10 +65,9 @@ module.exports = React.createClass({
       			    	</div>
       	    		</div>
           		</div>
-          	</div>
-          </div>
+              </div>
         )
-  },
+},
   handleSubmit: function(e){
     e.preventDefault();
     var ref = new Firebase("https://petwatch.firebaseio.com/");

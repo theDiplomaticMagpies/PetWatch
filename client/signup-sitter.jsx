@@ -21,7 +21,7 @@ module.exports = React.createClass({
     return (
       <div className="container">
               <div className="row centered-form">
-              <div className="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+      <div><img className="imageHolderSitter" src="https://www.petfinder.com/wp-content/uploads/2012/11/dog-how-to-select-your-new-best-friend-thinkstock99062463.jpg"/> </div>
               	<div className="panel panel-default">
               		<div className="panel-heading">
       			    		<h3 className="panel-title">Signup as a Sitter!</h3>
@@ -65,7 +65,6 @@ module.exports = React.createClass({
       			    	</div>
       	    		</div>
           		</div>
-          	</div>
           </div>
 
     )

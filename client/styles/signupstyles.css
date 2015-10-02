@@ -1,19 +1,58 @@
+html{background-color: #517A8F;}
+.mainPage{
+  background-color: #5D659C;
+}
+.appContainer{
+    background-color: #5D659C;
+}
+.imageHolderSitter{
+  position: absolute;
+  margin-right: 50px;
+  height: 500px;
+  width: 500px;
+  border-radius: 5px;
+}
+.imageHolderOwner{
+  position: absolute;
+  margin-right: 50px;
+  height: 500px;
+  width: 500px;
+  border-radius: 5px;
+}
 .input-bar{
   width: 350px;
   border-radius: 10px;
   font-weight: bold;
 }
+.container{
 
-
-.centered-form{
-	margin-top: 60px;
 }
+.centered-form, .panel, .owner-panel, .input-bar{
+  line-height: 25px;
+  }
+.centered-form {
+	margin-top: 60px;
 
+}
+.container{
+  text-align: center;
+}
+.panel{
+  width: 400px;
+  height: 500px;
+
+}
 .centered-form .panel{
 	background: rgba(255, 255, 255, 0.8);
 	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
-  height: 500px;
-  width: 500px;
-  line-height: 30px;
+  line-height: 35px;
   text-align: center;
+}
+.jumbotron{
+  border-radius: 10px !important;
+  background-image: url("http://www.picgifs.com/dog-graphics/dog-graphics/dog-paw/dog-graphics-dog-paw-002329.gif")
+  background-color: white;
+}
+body{
+  background-color: #5D659C !important;
 }
