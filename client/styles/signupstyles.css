@@ -1,9 +1,18 @@
-html{background-color: #517A8F;}
+html{
+  /*background-color: #517A8F;*/
+}
 .mainPage{
-  background-color: #5D659C;
+  /*background-color: #5D659C;*/
+}
+.navbar-default{
+background-image: linear-gradient(to bottom, #004D4d 0, #006767 100%) !important;
+border: 0px !important;
+}
+.collapse .navbar-collapse{
+color: white !important;
 }
 .appContainer{
-    background-color: #5D659C;
+    /*background-color: #5D659C;*/
 }
 .imageHolderSitter{
   position: absolute;
@@ -38,6 +47,7 @@ html{background-color: #517A8F;}
   text-align: center;
 }
 .panel{
+  border: 50px solid black;
   width: 400px;
   height: 500px;
 
@@ -50,9 +60,14 @@ html{background-color: #517A8F;}
 }
 .jumbotron{
   border-radius: 10px !important;
-  background-image: url("http://www.picgifs.com/dog-graphics/dog-graphics/dog-paw/dog-graphics-dog-paw-002329.gif")
-  background-color: white;
+  background-image: url('http://metrouk2.files.wordpress.com/2014/06/ad_136684158.jpg?w=620&h=413&crop=1') !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.greet{
+  color: white;
 }
 body{
-  background-color: #5D659C !important;
+  background-color: #C4CDE0 !important;
 }
