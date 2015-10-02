@@ -44,7 +44,9 @@ module.exports = React.createClass({
         			    			<div className="form-group">
         			    				<input className="input-bar" type="text" name="email" placeholder="Email" onChange={this.handleEmailChange} value={this.state.email} />
         			    			</div>
-
+                        <div className="form-group">
+                          <input className="input-bar" type="text" name="address" placeholder="Address" onChange={this.handleAddressChange} value={this.state.address} />
+                        </div>
       			    					<div className="form-group">
       			    						<input className="input-bar" type="text" name="phone" placeholder="Phone Number" onChange={this.handlePhoneChange} value={this.state.phone} />
       			    					</div>
