@@ -17,10 +17,10 @@ module.exports = React.createClass({
         <div className='ownerThumbnail'>
           <img className='petPic' src={this.props.picUrl} />
           <div className='ownerCaption'>
-            <h4>{this.props.firstname} {this.props.lastname} </h4>
+            <h4>{this.props.firstname}</h4>
             <h6>{this.props.description}</h6>
-            <br/>
-            <h6>{this.props.phone} {this.props.email}</h6>
+            <h6>{this.props.phone}<br/>
+						 {this.props.email}</h6>
 
           </div>
 
