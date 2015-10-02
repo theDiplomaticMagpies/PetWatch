@@ -46,6 +46,18 @@ module.exports = React.createClass({
                 <img src="http://justsomething.co/wp-content/uploads/2014/04/most-adorable-animals-5.jpg" alt="Slide 2" />
 
               </div>
+							<div className="item">
+								<img src="https://metrouk2.files.wordpress.com/2014/06/ad_136683824-e1401803007200.jpg?w=748&h=493&crop=1" alt="Slide 3" />
+
+							</div>
+							<div className="item">
+								<img src="http://metrouk2.files.wordpress.com/2014/06/ad_136684029.jpg?w=620&h=441&crop=1" alt="Slide 4" />
+
+							</div>
+							<div className="item">
+								<img src="http://metrouk2.files.wordpress.com/2014/06/ad_136683477-e1401803215866.jpg?w=620&h=441&crop=1" alt="Slide 5" />
+
+							</div>
             </div>
 
 

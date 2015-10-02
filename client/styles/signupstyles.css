@@ -4,6 +4,12 @@ html{
 .mainPage{
   /*background-color: #5D659C;*/
 }
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    height: 50%;
+    margin: auto;
+}
 .navbar-default{
 background-image: linear-gradient(to bottom, #004D4d 0, #006767 100%) !important;
 border: 0px !important;
