@@ -1,0 +1,9 @@
+{
+  "firebase": "petwatch",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
