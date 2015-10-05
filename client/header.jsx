@@ -7,11 +7,9 @@ module.exports = React.createClass({
 		return (
 			<nav className="navbar navbar-default navbar-fixed-top">
 				<div className="container">
-
 					<div className="navbar-header">
 						<a className="navbar-brand" href="#">PETWATCH</a>
 					</div>
-
 					<div id="navbar" className="collapse navbar-collapse">
 						<ul className="nav navbar-nav navbar-right">
 							<li ><Link  to="owner">Owner&#39;s Listing</Link></li>
@@ -20,7 +18,6 @@ module.exports = React.createClass({
               <li><Link to="signupsitter">Sitter&#39;s Signup</Link></li>
 						</ul>
 					</div>
-
 				</div>
 			</nav>
 		)
