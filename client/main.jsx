@@ -1,8 +1,6 @@
 //Main page
 //Route buttons Owner and Sitter
 var React = require('react');
-var Button = require('./button');
-var Footer = require('./footer');
 var Header = require('./header');
 
 module.exports = React.createClass({
@@ -12,43 +10,34 @@ module.exports = React.createClass({
 				<Header />
 				{this.content()}
 			</div>
-
 		)
 	},
-
 	content: function(){
-		if (this.props.children){
+		if(this.props.children){
 			return this.props.children
-		} else {
+		}else{
 			return (
-        <div>
+      	<div>
           <div className="jumbotron container">
             <div className="greet">
               <h2>Come meet PEOPLE</h2>
-              <p>Welcome to the most interactive SITTER FINDING app for your pets!</p>
+              <p>Welcome to the most interactive "SITTER FINDING" (wink wink) app for your "pets!"</p>
               <p>We have the most diverse group of sitters to hire
-              for the most interesting owners! With our services, find the generic to the exotic
+              for the most interesting owners! With our "SERVICES", find the generic to the exotic
               pets to watch!</p>
-              <p>Come and experience the amazing group of pets that you&#39;ll ever meet!</p>
-
+              <p>Come and ~experience~ the amazing group of pets that you&#39;ll ever meet!</p>
             </div>
           </div>
-
           <div id="carousel-example-generic" className="carousel slide container" data-ride="carousel">
-
-
             <div className="carousel-inner" role="listbox">
               <div className="item active">
                 <img src="http://www.extremetech.com/wp-content/uploads/2013/09/4Vln8-640x428.jpg" alt="Slide 1" />
-
               </div>
               <div className="item">
                 <img src="http://justsomething.co/wp-content/uploads/2014/04/most-adorable-animals-5.jpg" alt="Slide 2" />
-
               </div>
 							<div className="item">
 								<img src="https://metrouk2.files.wordpress.com/2014/06/ad_136683824-e1401803007200.jpg?w=748&h=493&crop=1" alt="Slide 3" />
-
 							</div>
 							<div className="item">
 								<img src="http://metrouk2.files.wordpress.com/2014/06/ad_136684029.jpg?w=620&h=441&crop=1" alt="Slide 4" />
