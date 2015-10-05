@@ -13,20 +13,17 @@ module.exports = React.createClass({
 		)
 	},
   renderOwnerProfile: function(){
-      return (
-        <div className='ownerThumbnail'>
-          <img className='petPic' src={this.props.picUrl} />
-          <div className='ownerCaption'>
-            <h2><b>{this.props.name}</b></h2>
-            <h4><i>{this.props.description}</i></h4>
-            <h5><b>Owner:</b> {this.props.firstname} {this.props.lastname}</h5>
-            <h5><b>Phone:</b> {this.props.phone}</h5>
-						<h5><b>Email:</b> {this.props.email}</h5>
-
-          </div>
-
+    return (
+      <div className='ownerThumbnail'>
+        <img className='petPic' src={this.props.picUrl} />
+        <div className='ownerCaption'>
+          <h4><b>{this.props.name}</b></h4>
+          <h6><i>{this.props.description}</i></h6>
+          <h6><b>Owner:</b> {this.props.firstname} {this.props.lastname}</h6>
+          <h6><b>Phone:</b> {this.props.phone}</h6>
+					<h6><b>Email:</b> {this.props.email}</h6>
         </div>
-
-      )
+      </div>
+    )
   }
 });
