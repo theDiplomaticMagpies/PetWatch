@@ -20,12 +20,12 @@ module.exports = React.createClass({
       	<div>
           <div className="jumbotron container">
             <div className="greet">
-              <h2>Come meet PEOPLE</h2>
-              <p>Welcome to the most interactive "SITTER FINDING" (wink wink) app for your "pets!"</p>
+              <h2>Welcome to PetWatch</h2>
+              <p>The most interactive site for your pet sitting needs!</p>
               <p>We have the most diverse group of sitters to hire
-              for the most interesting owners! With our "SERVICES", find the generic to the exotic
-              pets to watch!</p>
-              <p>Come and ~experience~ the amazing group of pets that you&#39;ll ever meet!</p>
+              for the most interesting owners! With our help, find the most exotic pets, and the most responsible sitters!</p>
+              <p>Come and experience the most amazing group of pets that you&#39;ll ever meet!</p>
+							<p>No pet is too big or small!</p>
             </div>
           </div>
           <div id="carousel-example-generic" className="carousel slide container" data-ride="carousel">
