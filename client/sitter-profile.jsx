@@ -19,14 +19,14 @@ module.exports = React.createClass({
         <div className='sitterThumbnail'>
           <img className='sitterPic' src={this.props.picURL}/>
           <div className='sitterCaption'>
-            <h4>{this.props.firstname} {this.props.lastname} </h4>
+            <h4><b>{this.props.firstname} {this.props.lastname}</b></h4>
             <h6>{this.props.description}</h6>
-            <br></br>
-            <h6>{this.props.address}</h6>
-            <h6>{this.props.phone} {this.props.email}</h6>
+            <h6><b>Owner: </b>{this.props.address}</h6>
+            <h6><b>Phone: </b>{this.props.phone}</h6>
+            <h6><b>Email: </b>{this.props.email}</h6>
           </div>
         </div>
-        )
+        );
   }
 
 });
