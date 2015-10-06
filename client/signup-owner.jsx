@@ -8,7 +8,7 @@ module.exports = React.createClass({
       firstname: '',
       lastname: '',
       email: '',
-      petname: '',
+      name: '',
       phone: '',
       description: '',
       species: '',
@@ -39,7 +39,7 @@ module.exports = React.createClass({
 			                 <input className="input-bar" type="text" name="email" placeholder="Email" onChange={this.handleEmailChange} value={this.state.email} />
 			               </div>
 			               <div className="form-group">
-			                 <input className="input-bar" type='text' name="petname" placeholder="Your pet's name" onChange={this.handlePetNameChange} value={this.state.petname} />
+			                 <input className="input-bar" type='text' name="name" placeholder="Your pet's name" onChange={this.handlePetNameChange} value={this.state.name} />
 			               </div>
 			               <div className="form-group">
 			                 <input className="input-bar" type="text" name="phone" placeholder="Phone Number" onChange={this.handlePhoneChange} value={this.state.phone} />
@@ -54,7 +54,7 @@ module.exports = React.createClass({
                        <input className="input-bar" type="text" name="picURL" placeholder="A Url to your pet's picture" onChange={this.handleUrlChange} value={this.state.picURL} />
                     </div>
                   </div>
-			            <button onClick={this.handleSubmit} disabled={!this.state.firstname || !this.state.lastname || !this.state.email || !this.state.phone || !this.state.petname || !this.state.description || !this.state.species || !this.state.picURL} className="signup-button btn btn-primary"><Link to="owner" className="links">Signup!</Link></button>
+			            <button onClick={this.handleSubmit} disabled={!this.state.firstname || !this.state.lastname || !this.state.email || !this.state.phone || !this.state.name || !this.state.description || !this.state.species || !this.state.picURL} className="signup-button btn btn-primary"><Link to="owner" className="links">Signup!</Link></button>
   		          </form>
     	        </div>
   		      </div>
@@ -71,7 +71,7 @@ module.exports = React.createClass({
       phone: this.state.phone,
       email: this.state.email,
       pets: {
-        petname: this.state.petname,
+        name: this.state.name,
         description: this.state.description,
         picURL: this.state.picURL,
         species: this.state.species
@@ -95,7 +95,7 @@ module.exports = React.createClass({
   },
   handlePetNameChange: function(e){
      this.setState({
-       petname: e.target.value
+       name: e.target.value
      })
   },
    handlePhoneChange: function(e){
