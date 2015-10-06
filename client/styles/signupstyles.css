@@ -1,10 +1,3 @@
-html{
-  /*background-color: #517A8F;*/
-}
-
-.mainPage{
-  /*background-color: #5D659C;*/
-}
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     width: 70%;
@@ -17,10 +10,6 @@ border: 0px !important;
 }
 .collapse .navbar-collapse{
 color: white !important;
-}
-.appContainer{
-    /*background-color: #5D659C;*/
-
 }
 .imageHolderSitter{
   position: absolute;
@@ -41,16 +30,11 @@ color: white !important;
   border-radius: 10px;
   font-weight: bold;
 }
-.container{
-
-}
 .centered-form, .panel, .owner-panel, .input-bar{
   line-height: 25px;
-
   }
 .centered-form {
 	margin-top: 60px;
-
 }
 .container{
   text-align: center;
@@ -59,7 +43,6 @@ color: white !important;
   border: 50px solid black;
   width: 400px;
   height: 500px;
-
 }
 .centered-form .panel{
 	background: rgba(255, 255, 255, 0.8);
@@ -73,7 +56,6 @@ color: white !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
 }
 .greet{
   color: aliceblue;

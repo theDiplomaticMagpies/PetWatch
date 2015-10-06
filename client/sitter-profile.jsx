@@ -8,6 +8,7 @@ module.exports = React.createClass({
          </div>
 		)
 	},
+	//sets up the base html for a sitter, render in the sitter-list.jsx
   renderSitterProfile: function(){
     return (
       <div className='sitterThumbnail'>
