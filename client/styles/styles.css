@@ -1,0 +1,52 @@
+* {
+  font-family: helvetica;
+}
+.greet {
+  margin-left: 50px;
+}
+.imgSize: {
+  height: 200px;
+}
+.btnContainer {
+	text-align: center;
+	display: inline-block;
+  padding-left: 500px;
+}
+.well {
+  width: 100%;
+}
+.sitterPic, .petPic {
+  margin-bottom: 20px;
+
+}
+.sitterPic, .petPic {
+  width: 200px;
+  height: 200px;
+}
+.ownerBar, .sitterThumbnail {
+  margin-left: 5px;
+}
+.ownerCaption, .sitterCaption{
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
+.ownerButton {
+	display: inline-block;
+  margin: 50px;
+	height: 250px;
+	width: 150px;
+}
+.sitterButton {
+	display: inline-block;
+	margin: 50px;
+	height: 250px;
+	width: 150px;
+}
+.appContainer{
+  margin: 75px;
+}
+.links {
+  color: white;
+  text-decoration: none;
+}

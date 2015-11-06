@@ -1,0 +1,65 @@
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    height: 50%;
+    margin: auto;
+}
+.navbar-default{
+background-image: linear-gradient(to bottom, #004D4d 0, #006767 100%) !important;
+border: 0px !important;
+}
+.collapse .navbar-collapse{
+color: white !important;
+}
+.imageHolderSitter{
+  position: absolute;
+  margin-right: 50px;
+  height: 500px;
+  width: 500px;
+  border-radius: 5px;
+}
+.imageHolderOwner{
+  position: absolute;
+  margin-right: 50px;
+  height: 500px;
+  width: 500px;
+  border-radius: 5px;
+}
+.input-bar{
+  width: 350px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.centered-form, .panel, .owner-panel, .input-bar{
+  line-height: 25px;
+  }
+.centered-form {
+	margin-top: 60px;
+}
+.container{
+  text-align: center;
+}
+.panel{
+  border: 50px solid black;
+  width: 400px;
+  height: 500px;
+}
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+  line-height: 35px;
+  text-align: center;
+}
+.jumbotron{
+  border-radius: 10px !important;
+  background-image: url('https://drscdn.500px.org/photo/123651921/m%3D1170/df22a8ece5cd275f8677de42ae09820a') !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.greet{
+  color: aliceblue;
+}
+body{
+  background-color: #EEE !important;
+}

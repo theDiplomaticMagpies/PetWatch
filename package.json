@@ -1,0 +1,29 @@
+{
+  "name": "PetWatch",
+  "version": "0.0.0",
+  "description": "A website connecting pet-owners and pet-sitters",
+  "main": "index.js",
+  "license": "Proprietary",
+  "private": true,
+  "dependencies": {
+    "browserify": "^11.2.0",
+    "firebase": "^2.3.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-server-livereload": "^1.5.3",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.5",
+    "history": "^1.11.1",
+    "node-notifier": "^4.3.1",
+    "react": "^0.13.3",
+    "react-async": "^2.1.0",
+    "react-router": "^1.0.0-beta2",
+    "react-router-component": "^0.26.1",
+    "reactfire": "^0.5.1",
+    "reactify": "^1.1.1",
+    "request": "^2.34.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.4.0"
+  }
+}
