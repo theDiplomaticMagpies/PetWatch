@@ -52,7 +52,7 @@ color: white !important;
 }
 .jumbotron{
   border-radius: 10px !important;
-  background-image: url('https://drscdn.500px.org/photo/123651921/m%3D1170/df22a8ece5cd275f8677de42ae09820a') !important;
+  background-image: url('../img/lion.jpg') !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
