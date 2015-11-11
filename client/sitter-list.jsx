@@ -1,6 +1,3 @@
-//Sitter List
-//contains a list of sitters and their basic info
-//profile view link
 var React = require('react');
 var SitterProfile = require('./sitter-profile');
 var ReactFire = require('reactfire');
@@ -19,15 +16,18 @@ module.exports = React.createClass({
 
   },
   render: function(){
-    return <div>
-      		   {this.renderSitters()}
-    	    	</div>
+    return (
+      <div>
+        {this.renderSitters()}
+    	</div>
+    )
 	},
+//Mount database objects into sitter profile html 
 	renderSitters: function() {
 	    return this.state.sitters.map(function(sitter){
 	       return <SitterProfile picURL={sitter.picURL} firstname={sitter.firstname}
-	        lastname={sitter.lastname} description={sitter.description}
-          phone={sitter.phone} email={sitter.email} address={sitter.address}/>
+	         lastname={sitter.lastname} description={sitter.description}
+           phone={sitter.phone} email={sitter.email} address={sitter.address}/>
 	    });
   	}
 });

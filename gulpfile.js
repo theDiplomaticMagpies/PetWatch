@@ -7,7 +7,6 @@ var reactify = require('reactify');
 var notifier = require('node-notifier');
 var server = require('gulp-server-livereload');
 var concat = require('gulp-concat');
-var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 
 var notify = function(error) {
@@ -72,15 +71,6 @@ gulp.task('serve', function(done) {
     }));
 });
 
-gulp.task('sass', function () {
-  gulp.src('./sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(concat('style.css'))
-    .pipe(gulp.dest('./'));
-});
+//gulp sass could be inserted here
 
-gulp.task('default', ['build', 'serve', 'sass', 'watch']);
-
-gulp.task('watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
-});
+gulp.task('default', ['build', 'serve', /*'sass','watch' */]);
